@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+
+{% load staticfiles %} <!-- ALWAYS COMES SECOND AFTER DOCTYPE  -->
+
 <html>
 	<head>
 		<title>Rango</title>
+		
 	</head>
 	<body>
 		<h1>Rango says...</h1>
@@ -14,8 +18,16 @@
 		</div>
 		
 		<div>
-			<img src="/static/images/test_images/frog1.jpg" alt="Image" > 
-			<!-- Not using correct method here... but this shows the image-->
+		<!--	<img src="/static/images/test_images/frog1.jpg" alt="Image" > 
+			 Not using correct method here... but this shows the image-->
+			
+			
+			<!-- This is correct method -> requires line 3 ( load static files) to be present-->
+			<img src="{% static 'images/test_images/frog1.jpg' %}" alt="Image" > 
+			
+			
+			
+			
 		</div>
 		
 		
