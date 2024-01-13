@@ -16,9 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
+
+# different web apps
 from rango import views
+from tango_app2 import views
+
+
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('rango/', include('rango.urls')),
+    path('tango_app2/', include('tango_app2.urls')),
     path('admin/', admin.site.urls),
 ]
