@@ -1,0 +1,11 @@
+["elephant1",
+"frog1",
+"girraf1",
+"goat1",
+"hippo1",
+"lion1",
+"lion2",
+"monkey1",
+"panda1",
+"parrot1",
+"pig1"]
