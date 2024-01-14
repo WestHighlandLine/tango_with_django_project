@@ -9,9 +9,10 @@
 	</head>
 	<body>
 		<h1>Rango says...</h1>
+		
 		<div>
-			hey there partner! <br />
-			<strong>{{ boldmessage }}</strong><br>
+			here is the about page. <br />
+			<strong>This tutorial has been put together by {{ name }}</strong><br>
 		</div>
 		<div>
 			<a href="/rango/index/">index</a><br />
@@ -23,10 +24,13 @@
 			
 			
 			<!-- This is correct method -> requires line 3 ( load static files) to be present-->
-			<img src={{imageName}} alt="Image" > 
+			<img src="{% static 'images/test_images/frog1.jpg' %}" alt="Image" > 
+	
 		</div>
-
-		
+		<br>
+		<div>
+			<img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat."/>
+		</div>
 		
 		
 	</body>

@@ -20,7 +20,8 @@ def about(request):
        
     V = random.choice(names)
     J = '/static/images/test_images/' + V + ".jpg"
-    context_dict = {'imageName': J,'boldmessage':"Displaying "+V+".jpg"}
+    context_dict = {'imageName': J,'name':'Matthew Cole'}
+    
     return render(request, 'rango/about.html', context=context_dict)
     
     
