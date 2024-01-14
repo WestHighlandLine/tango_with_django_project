@@ -1,3 +1,6 @@
 from django.contrib import admin
+from rango.models import Category, Page
 
-# Register your models here.
+
+admin.site.register(Category) # add more of these to add new classes
+admin.site.register(Page)
