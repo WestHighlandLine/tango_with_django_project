@@ -11,18 +11,16 @@ def index(request):
     # Return a rendered response to send to the client.
     # We make use of the shortcut function to make our lives easier.
     # Note that the first parameter is the template we wish to use.
-    return render(request, 'rango/index.html', context=context_dict)
+    return HttpResponse("Rango says hey there partner!<br><a href='/rango/about/'>About</a><br />")
+ #   return render(request, 'rango/index.html', context=context_dict)
 
 def about(request):
 
-    names = ["elephant1","frog1","girraf1","goat1","hippo1","lion1","lion2","monkey1","panda1","parrot1","pig1"]
 
-       
-    V = random.choice(names)
-    J = '/static/images/test_images/' + V + ".jpg"
+    J = '/static/images/test_images/cat.jpg'
     context_dict = {'imageName': J,'name':'Matthew Cole'}
     
-    return render(request, 'rango/about.html', context=context_dict)
-    
+    #return render(request, 'rango/about.html', context=context_dict)
+    return HttpResponse("Rango says here is the about page.<a href='/rango/'>Index</a><br>")
     
     

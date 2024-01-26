@@ -1,0 +1,26 @@
+For starting Python
+	cd C://Workspace/tango_with_django_project
+	conda activate rango
+	
+	python manage.py runserver
+	Hostname -I   # The ip address of th machine
+
+
+For Github:
+
+	git add *
+	git commit -m " string of commit"
+	git push
+	
+	git pull            (?) to get stuff from github
+
+Databases
+	python manage.py makemigrations rango  
+	python manage.py migrate
+
+
+Tests	
+	python manage.py test rango.tests_chapter3	
+	
+	
+	
