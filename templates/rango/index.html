@@ -9,8 +9,13 @@
 
 {% block body_block %}
 	<h1>Rango says</h1>
-	<div>
-		hey there partner! <br />
+	<div> <!-- If the user is login in, give a personalised message | THIS IS THE SAME BIT OF CODE THAT CAN BE USED TO RESTRICT ACCESS, though its limited-->
+		{% if user.is_authenticated %}
+			howdy {{ user.username }}!
+		{% else %}
+			hey there partner!
+		{% endif %}
+		<br>
 		<strong>{{ boldmessage }}</strong>
 	</div>
 
@@ -45,4 +50,5 @@
 
 
 	</div>
+
 {% endblock %}

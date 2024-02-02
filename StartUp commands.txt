@@ -1,4 +1,6 @@
 For starting Python
+	cd C://Workspace/GameApp
+
 	cd C://Workspace/tango_with_django_project
 	conda activate rango
 	
